@@ -11,7 +11,7 @@ Whether you're a seasoned researcher or a beginner in the field, this list of da
 
 Testing different types of reasoning tasks requires a well-thought-out approach, as each type of reasoning has its own unique challenges and requirements. I'll try to include some basic guidelines under each category. 
 
-###Independant researchers
+### Independant researchers
 If you're looking to test Prompt Architecture comprehensively but still stay within reasonable goals, consider dropping the the 4 more complex categories - Multi-hop QA, Decomposition, Robot Planning & Sports Plausibility, then picking one from each of the 5 remaining categories. 
 
 ## Math Word Problems
