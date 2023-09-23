@@ -15,7 +15,11 @@ Testing different types of reasoning tasks requires a well-thought-out approach,
 - GSM8K 
 Paper here - https://arxiv.org/pdf/2110.14168v1.pdf 
 Repo here - https://github.com/openai/grade-school-math
+
 - SVAMP
+Paper here - https://arxiv.org/abs/2103.07191
+Repo here - https://github.com/arkilpatel/SVAMP
+
 - ASDiv
 - AQuA
 - MAWPS
@@ -66,8 +70,6 @@ In these specialized tasks, domain-specific evaluation metrics are often require
 - Date Understanding
 - Tracking Shuffled Objects
 
-<<<<<<< HEAD
+<<<<<<< 
 For other types of logical reasoning, it's important to consider the model's ability to understand and apply rules or principles that are not explicitly stated. Custom evaluation metrics may be needed.
-=======
-For other types of logical reasoning, it's important to consider the model's ability to understand and apply rules or principles that are not explicitly stated. Custom evaluation metrics may be needed.
->>>>>>> 3c54f045d3f46a5feee77f6d05e9d8a450a55af9
+>>>>>>>
