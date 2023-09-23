@@ -15,7 +15,7 @@ Testing different types of reasoning tasks requires a well-thought-out approach,
 - GSM8K Dataset
   - [Paper](https://arxiv.org/pdf/2110.14168v1.pdf) and [Github](https://github.com/openai/grade-school-math)
 - SVAMP Dataset
-  - [Paper]((https://arxiv.org/abs/2103.07191) and [Github](https://github.com/arkilpatel/SVAMP)
+  - [Paper](https://arxiv.org/abs/2103.07191) and [Github](https://github.com/arkilpatel/SVAMP)
 - ASDiv
   - [Paper](https://www.aclweb.org/anthology/2020.acl-main.92.pdf) and [Github](https://github.com/chaochun/nlu-asdiv-dataset).
 - MAWPS
