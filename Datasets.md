@@ -13,25 +13,14 @@ Testing different types of reasoning tasks requires a well-thought-out approach,
 
 ## Math Word Problems
 - GSM8K Dataset
-
-Paper here - https://arxiv.org/pdf/2110.14168v1.pdf 
-Repo here - https://github.com/openai/grade-school-math
-
+  - [Paper](https://arxiv.org/pdf/2110.14168v1.pdf) and [Github](https://github.com/openai/grade-school-math)
 - SVAMP Dataset
-
-Paper here - https://arxiv.org/abs/2103.07191
-Repo here - https://github.com/arkilpatel/SVAMP
-
+  - [Paper]((https://arxiv.org/abs/2103.07191) and [Github](https://github.com/arkilpatel/SVAMP)
 - ASDiv
   - [Paper](https://www.aclweb.org/anthology/2020.acl-main.92.pdf) and [Github](https://github.com/chaochun/nlu-asdiv-dataset).
-  - `Data Size:` 1217
-  - Evaluated by Cross-Validation over 5 splits.
-- AQuA
 - MAWPS
   - [Paper](https://www.aclweb.org/anthology/N16-1136.pdf) and [Github](https://github.com/sroy9/mawps).
-  - `Data Size:` 1921
-  - Evaluated by Cross-Validation over 5 splits.
-
+- AQuA 
 For math word problems, it's essential to test not only the accuracy of the solution but also the model's ability to understand the problem context. You can use metrics like F1-score and accuracy to evaluate performance.
 
 
@@ -83,20 +72,3 @@ For other types of logical reasoning, it's important to consider the model's abi
 >>>>>>>
 
 
-
-Cites/Attributes not otherwise given
-
-@inproceedings{patel-etal-2021-nlp,
-    title = "Are {NLP} Models really able to Solve Simple Math Word Problems?",
-    author = "Patel, Arkil  and
-      Bhattamishra, Satwik  and
-      Goyal, Navin",
-    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
-    month = jun,
-    year = "2021",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.naacl-main.168",
-    doi = "10.18653/v1/2021.naacl-main.168",
-    pages = "2080--2094",
-    abstract = "The problem of designing NLP solvers for math word problems (MWP) has seen sustained research activity and steady gains in the test accuracy. Since existing solvers achieve high performance on the benchmark datasets for elementary level MWPs containing one-unknown arithmetic word problems, such problems are often considered {``}solved{''} with the bulk of research attention moving to more complex MWPs. In this paper, we restrict our attention to English MWPs taught in grades four and lower. We provide strong evidence that the existing MWP solvers rely on shallow heuristics to achieve high performance on the benchmark datasets. To this end, we show that MWP solvers that do not have access to the question asked in the MWP can still solve a large fraction of MWPs. Similarly, models that treat MWPs as bag-of-words can also achieve surprisingly high accuracy. Further, we introduce a challenge dataset, SVAMP, created by applying carefully chosen variations over examples sampled from existing datasets. The best accuracy achieved by state-of-the-art models is substantially lower on SVAMP, thus showing that much remains to be done even for the simplest of the MWPs.",
