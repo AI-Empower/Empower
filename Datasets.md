@@ -27,6 +27,12 @@ If you're looking to test Prompt Architecture comprehensively but still stay wit
 
 For math word problems, it's essential to test not only the accuracy of the solution but also the model's ability to understand the problem context. You can use metrics like F1-score and accuracy to evaluate performance.
 
+## Arithmetic Reasoning
+- MultiArith
+- AddSub
+- SingleEq
+
+Arithmetic reasoning tasks can be evaluated based on the model's ability to perform calculations accurately and efficiently. Speed and accuracy are key metrics here.
 
 ## Commonsense Reasoning
 - CSQA
@@ -40,12 +46,6 @@ In commonsense reasoning, the focus should be on the model's ability to make log
 
 Symbolic reasoning often involves manipulating symbols according to certain rules. Here, you may want to look at how well the model generalizes across different types of symbolic tasks.
 
-## Decomposition
-- List Reversal
-- kth Letter Concatenation
-
-For decomposition tasks, the key is to evaluate how well the model can break down a complex problem into simpler sub-problems. Metrics like precision and recall can be useful.
-
 ## Multi-hop QA
 - HotpotQA
 - CommaQA
@@ -54,12 +54,11 @@ For decomposition tasks, the key is to evaluate how well the model can break dow
 
 In multi-hop QA tasks, the model needs to gather information from multiple sources to answer a question. Evaluation could involve measuring the model's ability to correctly identify and utilize these sources.
 
-## Arithmetic Reasoning
-- MultiArith
-- AddSub
-- SingleEq
+## Decomposition
+- List Reversal
+- kth Letter Concatenation
 
-Arithmetic reasoning tasks can be evaluated based on the model's ability to perform calculations accurately and efficiently. Speed and accuracy are key metrics here.
+For decomposition tasks, the key is to evaluate how well the model can break down a complex problem into simpler sub-problems. Metrics like precision and recall can be useful.
 
 ## Robot Planning & Sports Plausibility
 - SayCan
