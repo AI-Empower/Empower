@@ -7,11 +7,12 @@ Welcome to our repository of major datasets used in Prompt Architecture Testing.
 Whether you're a seasoned researcher or a beginner in the field, this list of datasets offer a comprehensive range of data to test, validate, and implement your prompts and prompt architecture concepts.
 
 
-
 ## How to Test Different Types of Reasoning Tasks
 
 Testing different types of reasoning tasks requires a well-thought-out approach, as each type of reasoning has its own unique challenges and requirements. I'll try to include some basic guidelines under each category. 
 
+###Independant researchers
+If you're looking to test Prompt Architecture comprehensively but still stay within reasonable goals, consider dropping the the 4 more complex categories - Multi-hop QA, Decomposition, Robot Planning & Sports Plausibility, then picking one from each of the 5 remaining categories. 
 
 ## Math Word Problems
 - GSM8K Dataset
@@ -22,7 +23,6 @@ Testing different types of reasoning tasks requires a well-thought-out approach,
   - [Paper](https://www.aclweb.org/anthology/2020.acl-main.92.pdf) and [Github](https://github.com/chaochun/nlu-asdiv-dataset).
 - MAWPS
   - [Paper](https://www.aclweb.org/anthology/N16-1136.pdf) and [Github](https://github.com/sroy9/mawps).
-- AQuA 
 
 
 For math word problems, it's essential to test not only the accuracy of the solution but also the model's ability to understand the problem context. You can use metrics like F1-score and accuracy to evaluate performance.
