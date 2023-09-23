@@ -1,7 +1,10 @@
 # Datasets & Reasoning Tasks
 ## Introduction
 
-Welcome to our repository of major datasets used in Prompt Architecture Testing. These datasets are invaluable tools for researchers aiming to solve complex problems in areas such as math word problems, commonsense reasoning, symbolic reasoning, and more. Whether you're a seasoned researcher or a beginner in the field, these datasets offer a comprehensive range of data to test, validate, and implement your algorithms and models.
+Welcome to our repository of major datasets used in Prompt Architecture Testing. There are thousands of datasets in the world, we chose these because we see other major researchers using them, and we want to encourage standing on the shoulders of the giants who came before us. These datasets are invaluable tools for researchers aiming to solve complex problems in areas such as math word problems, commonsense reasoning, symbolic reasoning, and more. 
+
+
+Whether you're a seasoned researcher or a beginner in the field, this list of datasets offer a comprehensive range of data to test, validate, and implement your prompts and prompt architecture concepts.
 
 ## How to Test Different Types of Reasoning Tasks
 
