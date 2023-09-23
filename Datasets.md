@@ -6,6 +6,8 @@ Welcome to our repository of major datasets used in Prompt Architecture Testing.
 
 Whether you're a seasoned researcher or a beginner in the field, this list of datasets offer a comprehensive range of data to test, validate, and implement your prompts and prompt architecture concepts.
 
+
+
 ## How to Test Different Types of Reasoning Tasks
 
 Testing different types of reasoning tasks requires a well-thought-out approach, as each type of reasoning has its own unique challenges and requirements. I'll try to include some basic guidelines under each category. 
@@ -21,6 +23,8 @@ Testing different types of reasoning tasks requires a well-thought-out approach,
 - MAWPS
   - [Paper](https://www.aclweb.org/anthology/N16-1136.pdf) and [Github](https://github.com/sroy9/mawps).
 - AQuA 
+
+
 For math word problems, it's essential to test not only the accuracy of the solution but also the model's ability to understand the problem context. You can use metrics like F1-score and accuracy to evaluate performance.
 
 
@@ -72,3 +76,5 @@ For other types of logical reasoning, it's important to consider the model's abi
 >>>>>>>
 
 
+## Help us attrib
+This article needs work. Feel free to help :)
