@@ -47,7 +47,7 @@ The authors argue decomposition enables prompting techniques to handle more comp
 
 DECOMP provides a compelling paradigm for few-shot reasoning through targeted decomposition. The modular framework enables complex skills with minimal training.
 
-## Next Steps
+## Next Steps for Prompt Architecture
 
 Future work could:
 

@@ -1,4 +1,4 @@
-# HOW TO Make an Experiment Emulation Breakdown
+# Make an Experiment Emulation Breakdown
 
 ## Requirements for your submission
 Objective Stance: Present information neutrally, without personal bias.
