@@ -1,36 +1,55 @@
-### Zero Shot Reasoning 
-**Paper:** Kojima, T., Gu, S.S., Reid, M., Matsuo, Y. and Iwasawa, Y. (2022). Large Language Models are Zero-Shot Reasoners. *arXiv:2205.11916 [cs]*. [online] Available at: <https://arxiv.org/abs/2205.11916>
+# Large Language Models are Zero-Shot Reasoners
+Kojima, T., Gu, S.S., Reid, M., Matsuo, Y. and Iwasawa, Y. (2022). Large Language Models are Zero-Shot Reasoners. arXiv:2205.11916 [cs]. [online] Available at: https://arxiv.org/abs/2205.11916 
+## Summary 
 
-#### Key Contributions
-- Demonstrates LLMs have inherent zero-shot reasoning ability when prompted to "think step-by-step" across 12 diverse benchmark reasoning tasks.
-- Proposes "Zero-shot Chain of Thought" (Zero-shot-CoT) prompting approach that significantly improves zero-shot LLM performance without any task-specific examples.
-- Shows Zero-shot-CoT substantially outperforms standard zero-shot prompting and approaches/matches few-shot performance on tasks like MultiArith, GSM8K, and symbolic reasoning.
-- Provides strong evidence that scaling model size leads to qualitative improvements in reasoning under Zero-shot-CoT prompting.
-- Suggests latent multi-task reasoning skills encoded in LLMs that can be extracted via a simple, task-agnostic prompt.
+This paper shows large language models like GPT-3 and PaLM exhibit strong inherent zero-shot reasoning abilities on diverse reasoning tasks when prompted with a simple template like "Let's think step-by-step." The approach, called Zero-shot Chain of Thought (Zero-shot-CoT), significantly improves performance without requiring any task-specific examples or training.
 
-#### Methodology
-- Uses fixed prompt "Let's think step-by-step" before answer to elicit step-wise reasoning chain.
-- Employs two-stage prompting process: First extract full reasoning chain, then extract final answer using tailored answer prompts.
-- Tests on 12 diverse reasoning datasets: 6 arithmetic (MultiArith, GSM8K, etc), 2 commonsense (CommonsenseQA, StrategyQA), 2 symbolic (Last Letter, Coin Flip), and 2 logical (BIG-bench)
-- Compares Zero-shot vs Zero-shot-CoT and Few-shot vs Few-shot-CoT on accuracy.
-- Evaluates 17 LLMs ranging from 300M to 540B parameters, including GPT-3, InstructGPT, PaLM. 
-- Analyzes 50 sample outputs per condition for reasoning quality and categorizes common error types.
-- Tests prompt robustness using 15 variations of reasoning prompts.
-- Evaluates model scaling effects from 300M to 540B parameters.
-- Provides full prompts and answer cleansing details needed for reproducibility.
+## Prompts
 
-#### Reproducibility
-- Greedy decoding used for most models, top-k sampling for PaLM.
-- Fixed random seeds used for variance where applicable.
-- Detailed prompt templates provided in Appendices A.5 and B.
-- Complete list of models and datasets provided in Appendices A.2, A.3.  
-- Answer cleansing methodology outlined in Appendix A.6.
-- Analyzed reasoning chains included in Appendices B and C.
-- Code to reproduce key experiments available on GitHub.
+The main prompt tested is "Let's think step-by-step." The authors also evaluate the robustness across 15 variations of reasoning prompts.
 
-#### Significance
-- Establishes strong zero-shot baseline for benchmarking reasoning tasks.
-- Provides blueprint for discovering latent LLM capabilities via prompting.
-- Demonstrates power of simple prompting to unlock complex cognitive skills.
-- Motivates research into inherent multi-task abilities encoded in LLMs.
-- Advances Prompt Architecture toward generalized, task-agnostic prompts.
+## Models
+
+A range of models from 300M to 540B parameters are tested, including GPT-3, InstructGPT, PaLM, GPT-2, GPT-Neo, and T0.
+
+## Experimental Protocols
+
+Models are prompted with Zero-shot-CoT and evaluated on 12 reasoning tasks using accuracy. Greedy decoding is primarily used. 50 samples per condition are analyzed. Prompt robustness is tested.
+
+## Methodology
+
+Zero-shot-CoT uses a two-stage prompting approach. First, the full reasoning chain is elicited, then the final answer is extracted. The single prompt is applied across diverse reasoning skills without per-task tuning.
+
+## Key Contributions
+
+- Demonstrates strong inherent zero-shot reasoning skills in LLMs extractable via prompting
+- Proposes Zero-shot-CoT as a simple, task-agnostic approach to elicit complex multi-step reasoning 
+- Provides new zero-shot baseline for benchmarking reasoning
+
+## Main Arguments
+
+Key arguments:
+
+- LLMs exhibit untapped zero-shot reasoning potential accessible through prompting
+- General, multi-task prompts can unlock complex cognitive skills 
+- Scaling model size leads to better zero-shot reasoning performance
+
+## Limitations
+
+- Limited analysis of prompt sensitivity and comparisons to other techniques
+- No guarantees on logical accuracy of generated reasoning chains
+- Lack of full training data details for proprietary models 
+
+## Impact
+
+Establishes prompting as a powerful technique for eliciting complex skills from LLMs without training. Findings motivate investigating inherent multi-task capabilities encoded in models.
+
+## Next Steps
+
+Future directions:
+
+- Automate prompt creation for Zero-shot-CoT
+- Improve logical accuracy of generated reasoning
+- Discover other latent multi-task capabilities via prompts  
+- Compare Zero-shot-CoT to other prompting approaches
+- Examine societal impacts
