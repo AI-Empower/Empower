@@ -44,7 +44,7 @@ Key arguments:
 
 Establishes prompting as a powerful technique for eliciting complex skills from LLMs without training. Findings motivate investigating inherent multi-task capabilities encoded in models.
 
-## Next Steps
+## Next Steps for Prompt Architecture  
 
 Future directions:
 
