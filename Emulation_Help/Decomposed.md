@@ -1,19 +1,3 @@
-Here is a critique of my previous markdown summary:
-
-The overall structure and key points are good, but the summary could be improved in several ways:
-
-- The methodology section lacks details on the prompt structures and examples used. More specifics about the decomposition strategies would make it clearer.
-
-- The results should highlight some quantitative improvements seen, not just generic "outperforms". Numbers for a couple datasets would help substantiate the claims.
-
-- The significance is framed too generically around prompting. It misses emphasizing the novel concept of modular, specialized sub-task prompts.
-
-- The writing could be tightened up and made more concise in places, while adding key details in others.
-
-- The modular framework and sub-task specialization aspects should be highlighted more in the intro and conclusion.
-
-Here is an updated markdown summary addressing these issues:
-
 # Decomposed Prompting
 
 ## Key Contributions
