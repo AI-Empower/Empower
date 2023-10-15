@@ -35,8 +35,8 @@ For math word problems, it's essential to test not only the accuracy of the solu
 Arithmetic reasoning tasks can be evaluated based on the model's ability to perform calculations accurately and efficiently. Speed and accuracy are key metrics here.
 
 ## Commonsense Reasoning
-- CSQA
-- StrategyQA
+- CSQA [Paper](https://arxiv.org/abs/1801.10314) and [Github](https://github.com/amritasaha1812/CSQA_Code)
+- StrategyQA [Paper](https://arxiv.org/abs/2101.02235) and [Github](https://github.com/eladsegal/strategyqa)
 
 In commonsense reasoning, the focus should be on the model's ability to make logical deductions that are not explicitly stated. Techniques like ablation studies can be useful here.
 
