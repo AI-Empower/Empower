@@ -22,7 +22,7 @@ This study aims to address gaps in systematic benchmarking of prompting techniqu
 
 ### Framework
 This comparative cumulative case study will evaluate three modular prompting techniques on established reasoning tasks across three large language models. The evolution of techniques will be summarized prior to the comparative assessment. Both quantitative metrics and qualitative analyses will be used to gather insights.
-
+These modular prompting techniques are reviewed in a literature review published by the researcher in peer reviewed journal [here](https://www.ijcaonline.org/archives/volume185/number34/ansara-2023-ijca-923133.pdf) 
 ### Objectives
 - Benchmark performance of prompting techniques across models
 - Gather comparative insights into optimization
