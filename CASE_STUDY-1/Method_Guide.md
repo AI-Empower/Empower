@@ -16,20 +16,42 @@ Data for this study will be sourced from the following datasets:
 
 ## Data Analysis 
 
-The data analysis will encompass both quantitative and qualitative methods. Quantitative metrics, such as accuracy, will be supplemented by human judgments assessing coherence and relevance. The analysis will highlight the differences in optimization between various techniques and models. It's crucial to remain vigilant of potential biases and consider the possibility of crowd-sourcing some evaluations for a more diverse perspective.
+The analysis will employ a combination of quantitative and qualitative methods to evaluate the performance of the models across various tasks. The following metrics have been identified for a comprehensive evaluation:
+
+1. **Accuracy:** 
+   - This metric calculates the ratio of correct responses to total responses, providing a direct measure of the model's correctness.
+   - Formula: `(Number of Correct Responses / Total Responses) * 100`
+
+2. **Logical Consistency:** 
+   - This metric evaluates the logical soundness of the model's responses. It is especially relevant for tasks demanding logical reasoning, such as the Arithmetic GSM8K.
+
+3. **Depth of Reasoning:** 
+   - Depth of Reasoning assesses the model's ability to offer detailed explanations or engage in multi-step reasoning processes. It is crucial for tasks like StrategyQA, which necessitate deeper cognitive processing.
+
+4. **Error Categorization:** 
+   - This metric provides a systematic categorization of the model's errors into specific types, such as arithmetic or reasoning errors. By doing so, it highlights areas where the model may need refinement.
+
+5. **Robustness to Input Variation:** 
+   - This metric gauges the model's consistency when faced with slightly altered or rephrased prompts, ensuring that performance isn't overly reliant on specific phrasings.
+
+These metrics collectively offer a holistic perspective on the model's performance, ensuring a thorough and unbiased evaluation. Additionally, human judgments will be used to assess aspects like coherence and relevance, providing a more rounded analysis.
 
 ## Validity and Reliability
 
-- **Prompt Design:** The design of the prompts will be validated through feedback from peers in the field.
-- **Documentation:** All protocols will be meticulously documented to ensure reproducibility.
-- **Sampling:** Multiple samples will be taken for each condition to ensure a comprehensive analysis.
+- **Prompt Design Validation:** The design of the prompts undergoes rigorous validation, incorporating feedback from domain experts and peers. This ensures that the prompts are relevant, unbiased, and effective in eliciting the desired responses from the models.
+  
+- **Reproducibility:** Comprehensive documentation of all experimental protocols, configurations, and methodologies ensures that the study can be replicated by other researchers, bolstering the reliability of the findings.
+  
+- **Sampling Strategy:** To ensure robustness and comprehensiveness in the analysis, multiple samples are taken for each experimental condition. This strategy minimizes the impact of outliers and ensures a more representative evaluation.
 
 ## Limitations
 
-- **Sample Size:** The study acknowledges the limitation of a small sample size, which might affect the generalizability of the findings.
-- **Application Gaps:** There might be gaps when translating the findings to real-world applications.
-- **Prompt Design:** There's a potential for flaws in the prompt design, which might affect the results.
+- **Sample Size Constraints:** The study's findings are based on a limited sample size, which may introduce challenges in generalizing the results to broader contexts or different models.
+  
+- **Real-world Applicability:** While the study provides valuable insights within its experimental framework, there may be gaps when extrapolating these findings to real-world scenarios or diverse applications.
+  
+- **Prompt Design Limitations:** Despite rigorous validation, there remains a potential for inherent biases or inefficiencies in the prompt design. These could influence the models' responses and, consequently, the study's outcomes.
 
 ## Conclusion
 
-This methodology guide offers a detailed overview of the comparative experimental approach used to evaluate prompting techniques on reasoning tasks. The study uses standardized datasets and LLMs that are freely accessible. The findings from this study aim to provide actionable insights for the field of prompt architecture.
+This guide delineates the intricate methodology employed in a comparative case study designed to evaluate various prompting techniques across reasoning tasks. By leveraging standardized datasets and freely accessible LLMs, the study aims to bridge existing knowledge gaps in the realm of prompt architecture. The insights derived from this research endeavor hold the potential to shape future advancements in the field, offering a foundation for more optimized and effective prompting strategies.
