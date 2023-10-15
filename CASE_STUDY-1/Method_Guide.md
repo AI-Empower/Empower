@@ -8,9 +8,9 @@ Quantitative experimental approach comparing performance metrics across techniqu
 
 ## Data Collection
 
-- Arithmetic reasoning: GSM8K dataset via {API or Interface}
-- Implicit reasoning: Coin Flip Tasks via {API or Interface}
-- Commonsense reasoning: CSQA dataset via {API or Interface}
+- Arithmetic reasoning: GSM8K dataset via ?API or Interface?
+- Implicit reasoning: StrategyQA dataset via ?API or Interface?
+- Commonsense reasoning: CSQA dataset via ?API or Interface?
 
 ## Data Analysis 
 

@@ -1,6 +1,7 @@
-# OVERVIEW:
-## The Prompt Architecture – Modular Prompting Case Study – My Plan/Overview
+# Prompt Architecture Case Study #1
+## Modular Prompting Case Study – Overview
 
+If you want to help, PR or reach out on discord - https://discord.gg/Me6FK2sFVs
 ### Introduction
 This study aims to address gaps in systematic benchmarking of prompting techniques, an open challenge for the field of prompt architecture. Specific goals are comparing performance across models and gathering optimization insights through standardized tests.  
 **Independent Researcher. NO BUDGET. Educate the World.**
@@ -49,8 +50,28 @@ GPT-3 was selected given its strong few-shot learning capabilities evidenced in 
 | Commonsense                   | CSQA                         | [Paper](https://arxiv.org/abs/1801.10314)                                                | [Github](https://github.com/amritasaha1812/CSQA_Code)                                     |
 
   
-### Metrics
-Accuracy, coherence, relevance, efficiency (maybe reduce scope?)
+### Metrics for Evaluation
+
+The following metrics have been identified for a comprehensive evaluation of the models on the specified tasks:
+
+1. **Accuracy:** 
+   - Defined as the ratio of correct responses to total responses.
+   - Formula: `(Number of Correct Responses / Total Responses) * 100`
+
+2. **Logical Consistency:** 
+   - Evaluates the logical soundness of the model's responses. This metric is especially pertinent for tasks that demand logical reasoning, such as Arithmetic GSM8K.
+
+3. **Depth of Reasoning:** 
+   - Assesses the model's capability to provide detailed explanations or engage in multi-step reasoning. This is particularly relevant for tasks like StrategyQA that require deeper cognitive processing.
+
+4. **Error Categorization:** 
+   - Involves a systematic breakdown of the errors made by the model into specific categories, such as arithmetic errors or reasoning errors. This categorization aids in understanding the specific areas where the model might require improvement.
+
+5. **Robustness to Input Variation:** 
+   - Measures the consistency in the model's responses when presented with prompts that are slightly varied or rephrased. This metric ensures that the model's performance is not overly sensitive to specific phrasings.
+
+These metrics aim to provide a holistic view of the model's performance across various dimensions, ensuring a thorough and unbiased evaluation.
+
 
 ### Data Collection
 GUI Chats & model APIs with rate limits
@@ -63,3 +84,6 @@ The small sample of models and techniques limits generalizability. Lack of real-
 
 ### Conclusion
 The conclusion will summarize key takeaways from the comparative assessments, framing actionable insights for prompt architecture.
+
+
+
