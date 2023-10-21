@@ -9,32 +9,80 @@ The research employs a quantitative experimental approach, comparing performance
 ## Data Collection
 
 Data for this study will be sourced from the following datasets:
+- **Arithmetic reasoning**: The GSM8K dataset.
+- **Commonsense reasoning**: CommaQA dataset.
 
-- **Arithmetic reasoning:** The GSM8K dataset. The specific API or interface for data retrieval is yet to be determined.
-- **Implicit reasoning:** Data will be sourced from the StrategyQA dataset via an unspecified API or interface.
-- **Commonsense reasoning:** The study will utilize the CSQA dataset, accessed through an as-yet-undetermined API or interface.
+Given the constraints of being a single researcher working on weekends, the analysis will be streamlined and focused:
 
-## Data Analysis 
+1. **Quantitative Analysis:** 
+   - Calculate the **Accuracy** for each model on the GSM8K and CommaQA datasets.
+   - Compare the performance of the models across the two datasets to identify strengths and weaknesses.
 
-The analysis will employ a combination of quantitative and qualitative methods to evaluate the performance of the models across various tasks. The following metrics have been identified for a comprehensive evaluation:
+2. **Logical Consistency Analysis:** 
+   - For the GSM8K dataset, manually review a subset of model responses to assess **Logical Consistency**.
+   - Document instances where the model's arithmetic answers are not logically sound.
 
-1. **Accuracy:** 
-   - This metric calculates the ratio of correct responses to total responses, providing a direct measure of the model's correctness.
-   - Formula: `(Number of Correct Responses / Total Responses) * 100`
+3. **Relevance Analysis:** 
+   - For the CommaQA dataset, manually review a subset of model responses to assess **Answer Relevance**.
+   - Highlight instances where the model's answers are not relevant to the commonsense questions posed.
 
-2. **Logical Consistency:** 
-   - This metric evaluates the logical soundness of the model's responses. It is especially relevant for tasks demanding logical reasoning, such as the Arithmetic GSM8K.
+4. **Robustness to Input Variation (RIV) Analysis:** 
+   - Test a subset of prompts from both datasets with minor variations.
+   - Breakdown:
+     - **Rephrasing:** For one-third of the selected subset of questions, rephrase the question in a different way. Compare the model's answers to the original and rephrased questions.
+     - **Specificity:** For another one-third of the selected subset, either add a specific detail or remove some details from the question. Assess the model's sensitivity to these changes in prompt detail.
+     - **Ordering:** For the remaining one-third of the selected subset, change the order of information without altering the meaning. Check if the change in order affects the model's response.
 
-3. **Depth of Reasoning:** 
-   - Depth of Reasoning assesses the model's ability to offer detailed explanations or engage in multi-step reasoning processes. It is crucial for tasks like StrategyQA, which necessitate deeper cognitive processing.
+5. **Error Pattern Analysis:** 
+   - Identify and categorize common types of errors for each dataset. This will help in understanding specific areas where the model might require improvement.
 
-4. **Error Categorization:** 
-   - This metric provides a systematic categorization of the model's errors into specific types, such as arithmetic or reasoning errors. By doing so, it highlights areas where the model may need refinement.
+6. **Documentation:** 
+   - All findings, observations, and methodologies will be documented clearly for transparency and reproducibility.
+   - Given the constraints, it's recommended to focus on clear and concise documentation rather than exhaustive analysis.
 
-5. **Robustness to Input Variation:** 
-   - This metric gauges the model's consistency when faced with slightly altered or rephrased prompts, ensuring that performance isn't overly reliant on specific phrasings.
+### Data Analysis
 
-These metrics collectively offer a holistic perspective on the model's performance, ensuring a thorough and unbiased evaluation. Additionally, human judgments will be used to assess aspects like coherence and relevance, providing a more rounded analysis.
+1. **Accuracy Assessment:** 
+   - Calculate and compare the **General Accuracy** for each model on the GSM8K and CommaQA datasets.
+
+2. **Arithmetic Logic Review:** 
+   - For the GSM8K dataset, manually assess a subset of answers for logical consistency in arithmetic reasoning.
+
+3. **Commonsense Answer Review:** 
+   - For the CommaQA dataset, evaluate a subset of answers for appropriateness in addressing commonsense questions.
+
+4. **RIV Analysis:** 
+   - Test variations of prompts from both datasets to assess model consistency.
+   - Analyze differences in responses to understand model sensitivity to prompt changes.
+
+5. **Error Analysis:** 
+   - Identify prevalent error types for each dataset and analyze their potential causes and implications.
+
+6. **Documentation and Reporting:** 
+   - Clearly document methodologies, findings, and observations.
+   - Highlight key insights, challenges faced, and recommendations for future research.
+
+### Metrics for Evaluation
+
+1. **General Accuracy:** 
+   - Defined as the ratio of correct answers to total questions.
+   - Formula: `(Number of Correct Answers / Total Questions) * 100`
+   
+2. **Arithmetic Logic Consistency (GSM8K):** 
+   - Evaluates if the model's arithmetic answers adhere to mathematical logic and rules.
+
+3. **Commonsense Answer Appropriateness (CommaQA):** 
+   - Assesses if the model's answers are contextually and factually appropriate for the commonsense questions posed.
+
+4. **Robustness to Input Variation (RIV):** 
+   - Measures the model's consistency when presented with slightly varied prompts.
+   - Breakdown:
+     - **Rephrasing:** Alter the phrasing of the question without changing its meaning.
+     - **Specificity:** Modify the level of detail in the question.
+     - **Ordering:** Rearrange the order of information in the question.
+
+5. **Error Typology:** 
+   - Categorize and analyze common types of errors, such as factual inaccuracies, logical fallacies, or context mismatches.
 
 ## Validity and Reliability
 

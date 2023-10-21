@@ -13,12 +13,18 @@ This study aims to address gaps in systematic benchmarking of prompting techniqu
 4. Document all prompt examples, model configurations, and experimental protocols for reproducibility.
 
 ### Research Questions
-- **RQ1:** How do Zero-Shot Reasoning, Chain-of-Thought, and Decomposed Prompting techniques differ in accuracy across GSM8K arithmetic, Symbolic (Coin Flip), and Commonsense (CSQA) reasoning tasks?
-- **RQ2:** How do the coherence and relevance outcomes of GPT-3, GPT-4, and Claude differ when applying the Zero-Shot Reasoning, Chain-of-Thought, and Decomposed Prompting techniques?
-- **Additional Questions we’re going to try if we can…**
-  - **RQ3:** How does the Chain-of-Thought prompting technique influence the multi-step reasoning capabilities of GPT-3, GPT-4, and Claude compared to standard prompting?
-  - **RQ4:** Does the Decomposed Prompting technique enhance the performance of LLMs like GPT-3 and Claude in complex reasoning tasks compared to Chain-of-Thought prompting?
-  - **RQ5:** To what extent does the Zero-Shot-CoT approach improve the zero-shot reasoning abilities of GPT-3 and GPT-4 across diverse tasks?
+
+- **RQ1:** How do the accuracy levels of GPT-3, GPT-4, and Claude differ across the GSM8K arithmetic and Commonsense (CommaQA) reasoning tasks when using Zero-Shot Reasoning, Chain-of-Thought, and Decomposed Prompting techniques?
+
+- **RQ2:** In the context of the GSM8K arithmetic tasks, which prompting technique results in the most logically consistent answers across GPT-3, GPT-4, and Claude?
+
+- **RQ3:** For the Commonsense (CommaQA) reasoning tasks, which prompting technique leads to answers that most accurately address the posed questions for GPT-3, GPT-4, and Claude?
+
+- **RQ4:** How do slight variations in input prompts (rephrasing, specificity changes, and ordering alterations) impact the consistency of responses from GPT-3, GPT-4, and Claude across both datasets?
+
+- **RQ5:** What specific types of errors are most prevalent for each model across the GSM8K and CommaQA datasets? How might these errors impact the practical application of these models in real-world reasoning tasks?
+
+
 
 ### Framework
 This comparative cumulative case study will evaluate three modular prompting techniques on established reasoning tasks across three large language models. The evolution of techniques will be summarized prior to the comparative assessment. Both quantitative metrics and qualitative analyses will be used to gather insights.
@@ -46,44 +52,10 @@ GPT-3 was selected given its strong few-shot learning capabilities evidenced in 
 | Reasoning Task                          | DataSet Name                  | Paper                                                                                     | GitHub                                                                                     |
 |-------------------------------|------------------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | Arithmetic                    | GSM8K                        | [Paper](https://arxiv.org/pdf/2110.14168v1.pdf)                                          | [Github](https://github.com/openai/grade-school-math)                                     |
-| Implicit Reasoning            | StrategyQA                   | [Paper](https://arxiv.org/abs/2101.02235)                                                | [Github](https://github.com/eladsegal/strategyqa)                                         |
-| Commonsense                   | CSQA                         | [Paper](https://arxiv.org/abs/1801.10314)                                                | [Github](https://github.com/amritasaha1812/CSQA_Code)                                     |
+| Complex Tasks            | CommaQA                   | [Paper](https://arxiv.org/abs/2110.08542)                                                | [Github](https://github.com/allenai/CommaQA)                                         |
 
-  
-### Metrics for Evaluation
+See the Method_Guide for all the gooey details
 
-The following metrics have been identified for a comprehensive evaluation of the models on the specified tasks:
-
-1. **Accuracy:** 
-   - Defined as the ratio of correct responses to total responses.
-   - Formula: `(Number of Correct Responses / Total Responses) * 100`
-
-2. **Logical Consistency:** 
-   - Evaluates the logical soundness of the model's responses. This metric is especially pertinent for tasks that demand logical reasoning, such as Arithmetic GSM8K.
-
-3. **Depth of Reasoning:** 
-   - Assesses the model's capability to provide detailed explanations or engage in multi-step reasoning. This is particularly relevant for tasks like StrategyQA that require deeper cognitive processing.
-
-4. **Error Categorization:** 
-   - Involves a systematic breakdown of the errors made by the model into specific categories, such as arithmetic errors or reasoning errors. This categorization aids in understanding the specific areas where the model might require improvement.
-
-5. **Robustness to Input Variation:** 
-   - Measures the consistency in the model's responses when presented with prompts that are slightly varied or rephrased. This metric ensures that the model's performance is not overly sensitive to specific phrasings.
-
-These metrics aim to provide a holistic view of the model's performance across various dimensions, ensuring a thorough and unbiased evaluation.
-
-
-### Data Collection
-GUI Chats & model APIs with rate limits
-
-### Analysis
-Quantitative metrics such as accuracy will be supplemented by qualitative human judgements of coherence and relevance. Comparisons will highlight differences in optimization between techniques and models. Be wary of biases and consider crowd-sourcing some evaluations.
-
-### Limitations
-The small sample of models and techniques limits generalizability. Lack of real-world evaluation makes it unclear how findings would translate to applied settings. While findings may not fully generalize, this initial comparative study will provide the foundation for future work expanding the models, techniques, and real-world evaluations.
-
-### Conclusion
-The conclusion will summarize key takeaways from the comparative assessments, framing actionable insights for prompt architecture.
 
 
 
