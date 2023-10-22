@@ -22,21 +22,17 @@ Given the constraints of being a single researcher working on weekends, the anal
    - For the GSM8K dataset, manually review a subset of model responses to assess **Logical Consistency**.
    - Document instances where the model's arithmetic answers are not logically sound.
 
-3. **Relevance Analysis:** 
-   - For the CommaQA dataset, manually review a subset of model responses to assess **Answer Relevance**.
-   - Highlight instances where the model's answers are not relevant to the commonsense questions posed.
-
-4. **Robustness to Input Variation (RIV) Analysis:** 
+3. **Robustness to Input Variation (RIV) Analysis:** 
    - Test a subset of prompts from both datasets with minor variations.
    - Breakdown:
      - **Rephrasing:** For one-third of the selected subset of questions, rephrase the question in a different way. Compare the model's answers to the original and rephrased questions.
      - **Specificity:** For another one-third of the selected subset, either add a specific detail or remove some details from the question. Assess the model's sensitivity to these changes in prompt detail.
      - **Ordering:** For the remaining one-third of the selected subset, change the order of information without altering the meaning. Check if the change in order affects the model's response.
 
-5. **Error Pattern Analysis:** 
+4. **Error Pattern Analysis:** 
    - Identify and categorize common types of errors for each dataset. This will help in understanding specific areas where the model might require improvement.
 
-6. **Documentation:** 
+5. **Documentation:** 
    - All findings, observations, and methodologies will be documented clearly for transparency and reproducibility.
    - Given the constraints, it's recommended to focus on clear and concise documentation rather than exhaustive analysis.
 

@@ -7,18 +7,18 @@ This study aims to address gaps in systematic benchmarking of prompting techniqu
 **Independent Researcher. NO BUDGET. Educate the World.**
 
 ### Requirements
-1. Test capabilities of GPT-3, GPT-4, and Claude based on accessibility through free tiers and range of capacities.
+1. Test capabilities of GPT-3, GPT-4, Bard, Bing and Claude based on accessibility through free tiers and range of capacities.
 2. Use accuracy, coherence, relevance, and efficiency metrics. Provide precise definitions and scales.
 3. Specify statistical tests upfront and minimum significance level.
 4. Document all prompt examples, model configurations, and experimental protocols for reproducibility.
 
 ### Research Questions
 
-- **RQ1:** How do the accuracy levels of GPT-3, GPT-4, and Claude differ across the GSM8K arithmetic and Commonsense (CommaQA) reasoning tasks when using Zero-Shot Reasoning, Chain-of-Thought, and Decomposed Prompting techniques?
+- **RQ1:** How do the accuracy levels of GPT-3, GPT-4, and Claude differ across the GSM8K arithmetic and Complex (CommaQA) reasoning tasks when using Zero-Shot Reasoning, Chain-of-Thought, and Decomposed Prompting techniques?
 
 - **RQ2:** In the context of the GSM8K arithmetic tasks, which prompting technique results in the most logically consistent answers across GPT-3, GPT-4, and Claude?
 
-- **RQ3:** For the Commonsense (CommaQA) reasoning tasks, which prompting technique leads to answers that most accurately address the posed questions for GPT-3, GPT-4, and Claude?
+- **RQ3:** For the Complex (CommaQA) reasoning tasks, which prompting technique leads to answers that most accurately address the posed questions for GPT-3, GPT-4, and Claude?
 
 - **RQ4:** How do slight variations in input prompts (rephrasing, specificity changes, and ordering alterations) impact the consistency of responses from GPT-3, GPT-4, and Claude across both datasets?
 
@@ -27,8 +27,9 @@ This study aims to address gaps in systematic benchmarking of prompting techniqu
 
 
 ### Framework
-This comparative cumulative case study will evaluate three modular prompting techniques on established reasoning tasks across three large language models. The evolution of techniques will be summarized prior to the comparative assessment. Both quantitative metrics and qualitative analyses will be used to gather insights.
-These modular prompting techniques are reviewed in a literature review published by the researcher in peer reviewed journal [here](https://www.ijcaonline.org/archives/volume185/number34/ansara-2023-ijca-923133.pdf) 
+This comparative cumulative case study will evaluate three modular prompting techniques on established reasoning tasks across three large language models. The evolution of techniques will be summarized prior to the comparative assessment. Both quantitative metrics and qualitative analyses will be used to gather insights. These modular prompting techniques are reviewed in a literature review published by the researcher in peer reviewed journal [here](https://www.ijcaonline.org/archives/volume185/number34/ansara-2023-ijca-923133.pdf) 
+
+
 ### Objectives
 - Benchmark performance of prompting techniques across models
 - Gather comparative insights into optimization
@@ -54,7 +55,7 @@ GPT-3 was selected given its strong few-shot learning capabilities evidenced in 
 | Arithmetic                    | GSM8K                        | [Paper](https://arxiv.org/pdf/2110.14168v1.pdf)                                          | [Github](https://github.com/openai/grade-school-math)                                     |
 | Complex Tasks            | CommaQA                   | [Paper](https://arxiv.org/abs/2110.08542)                                                | [Github](https://github.com/allenai/CommaQA)                                         |
 
-See the Method_Guide for all the gooey details
+See the Method_Guide for all the gooey details [here](/Method_Guide.md)
 
 
 
