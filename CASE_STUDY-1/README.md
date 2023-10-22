@@ -55,7 +55,7 @@ GPT-3 was selected given its strong few-shot learning capabilities evidenced in 
 | Arithmetic                    | GSM8K                        | [Paper](https://arxiv.org/pdf/2110.14168v1.pdf)                                          | [Github](https://github.com/openai/grade-school-math)                                     |
 | Complex Tasks            | CommaQA                   | [Paper](https://arxiv.org/abs/2110.08542)                                                | [Github](https://github.com/allenai/CommaQA)                                         |
 
-See the Method_Guide for all the gooey details [here](/Method_Guide.md)
+See the Method_Guide for all the gooey details [here](CASE_STUDY-1/Method_Guide.md)
 
 
 
