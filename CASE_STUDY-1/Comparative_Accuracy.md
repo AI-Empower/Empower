@@ -9,8 +9,6 @@ Test Data Analysis
 ### Data Preparation for Analysis
 
 1. **Chi-Square Test**: We'll aggregate the data to compare the number of correct and incorrect answers for each model.
-2. **Logistic Regression**: We need to categorize the types of math problems. This might require additional data processing or domain expertise.
-3. **Correlation Analysis**: We'll compute the length or complexity score for each math problem and correlate this with the model's accuracy.
 
 Let's start with the Chi-Square test to compare the accuracy of different AI models. We'll create a contingency table for the correct and incorrect responses for each model and conduct the test.
 ```
