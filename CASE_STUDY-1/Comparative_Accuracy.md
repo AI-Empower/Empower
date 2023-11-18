@@ -1,5 +1,4 @@
-Based on the structure of the provided data, we can formulate several research questions and select appropriate analysis methods. The data includes problem prompts, AI model used (GPT3.5, Bard), and whether the response was correct or not. Here are potential research questions and the analyses we can perform:
-
+Test Data Analysis
 ### Research Question
 
 1. **Comparative Accuracy Analysis**: How do the AI models compare in terms of accuracy in solving math problems?
