@@ -27,8 +27,8 @@
 
 6. **Basic Semantic Complexity**:
     - **1 point**: Simple and straightforward
-    - **2 points**: Moderately complex (some inferential thinking required)
-    - **3 points**: Highly complex (requires significant inference and understanding of context)
+    - **2 points**: Moderately complex (e.g. some inferential thinking required)
+    - **3 points**: Highly complex (e.g. requires significant inference and understanding of context)
 
 ## Subcategories for Basic Semantic Complexity:
 
