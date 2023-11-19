@@ -1,10 +1,12 @@
-Test Data Analysis
-### Research Question
+#Test Data Analysis
+## Research Question
 
 1. **Comparative Accuracy Analysis**: How do the AI models compare in terms of accuracy in solving math problems?
    - **Analysis Method**: Chi-Square Test.
    - **Rationale**: This test is suitable for categorical data (correct/incorrect) to compare the frequencies of correct answers across different models.
    - **Assumptions**: Independence of observations, expected frequency in each cell ≥ 5.
+
+-- SEE THE END FOR THE UPDATED RUN WITH A 50% SAMPLE SIZE INCREASE! --
 
 ### Data Preparation for Analysis
 
@@ -69,3 +71,29 @@ chi2_filled, p_filled, dof_filled, expected_filled = chi2_contingency(chi_square
 # Displaying the adjusted contingency table and the results of the Chi-Square Test
 chi_square_data_filled, {'Chi-Square Statistic': chi2_filled, 'p-value': p_filled, 'Degrees of Freedom': dof_filled, 'Expected Frequencies': expected_filled}
 ```
+
+The Chi-Squared test was conducted against a 50% larger sample size to ensure robustness of data. Those results have been provided below in an abbreviated form:
+
+#### Contingency Table
+```
+Zero-Shot Accuracy as Correct ( Correct = 1, Incorrect = 0)  0.0  1.0
+Model                                                                
+Bard                                                           9   21
+GPT3.5                                                         5   25
+GPT4                                                           0   30
+```
+
+#### Test Results
+- Chi-Squared Statistic: 10.32
+- Degrees of Freedom: 2
+- p-value: 0.00574
+- Expected Frequencies:
+```
+[[ 4.66666667 25.33333333]
+ [ 4.66666667 25.33333333]
+ [ 4.66666667 25.33333333]]
+```
+
+### Conclusion
+
+Based on the p-value of 0.00574, we can conclude that there is a statistically significant difference in accuracy among the three AI models. This suggests that not all models perform equally in terms of accuracy on the given dataset.
