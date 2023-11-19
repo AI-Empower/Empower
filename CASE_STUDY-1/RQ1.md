@@ -1,5 +1,4 @@
-#Test Data Analysis
-## Research Question
+# RQ1 - How do the AI models compare in terms of accuracy in solving math problems?
 
 1. **Comparative Accuracy Analysis**: How do the AI models compare in terms of accuracy in solving math problems?
    - **Analysis Method**: Chi-Square Test.
@@ -11,22 +10,6 @@
 ### Data Preparation for Analysis
 
 1. **Chi-Square Test**: We'll aggregate the data to compare the number of correct and incorrect answers for each model.
-
-Let's start with the Chi-Square test to compare the accuracy of different AI models. We'll create a contingency table for the correct and incorrect responses for each model and conduct the test.
-```
-import pandas as pd
-
-# Load the data from the uploaded file
-file_path = '/mnt/data/testdata.csv'
-data = pd.read_csv(file_path)
-
-# Display the first few rows of the dataframe to understand its structure
-data.head()
-```
-
-The Chi-Square test produced `NaN` values, indicating an issue with the data, likely due to missing values in the contingency table. Specifically, the GPT4 model does not have any incorrect answers recorded, resulting in a missing value in the '0' (Incorrect) column.
-
-To properly conduct the Chi-Square test, we need to address this missing data issue. A typical approach would be to impute missing values. However, in this case, since the missing value represents the absence of incorrect answers for GPT4, we can safely fill it with '0'. Let's adjust the data accordingly and rerun the Chi-Square test.
 
 ```
 from scipy.stats import chi2_contingency
@@ -42,7 +25,7 @@ chi2, p, dof, expected = chi2_contingency(chi_square_data)
 chi_square_data, {'Chi-Square Statistic': chi2, 'p-value': p, 'Degrees of Freedom': dof, 'Expected Frequencies': expected}
 ```
 
-The adjusted Chi-Square test yields the following results:
+The Chi-Square test yields the following results:
 
 - **Chi-Square Statistic**: 8.88
 - **p-value**: 0.0118
@@ -59,7 +42,6 @@ The adjusted Chi-Square test yields the following results:
 
 This analysis answers the first research question, demonstrating significant differences in performance among the AI models. For the remaining research questions, additional data processing would be required, such as categorizing math problems for logistic regression or calculating problem complexity for correlation analysis.
 
-
 Analysis Code
 ```
 # Filling missing values with 0 for the Chi-Square Test
@@ -71,7 +53,8 @@ chi2_filled, p_filled, dof_filled, expected_filled = chi2_contingency(chi_square
 # Displaying the adjusted contingency table and the results of the Chi-Square Test
 chi_square_data_filled, {'Chi-Square Statistic': chi2_filled, 'p-value': p_filled, 'Degrees of Freedom': dof_filled, 'Expected Frequencies': expected_filled}
 ```
-
+# Concerns Remained - A balance between independant researcher capability & robust data must be struck
+So I increased my sample size by 50%
 ## The Chi-Squared test was conducted against a 50% larger sample size to ensure robustness of data. 
 *Those results have been provided below in an abbreviated form:*
 
