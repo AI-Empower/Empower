@@ -51,3 +51,18 @@
     - **1 point**: Direct, no inferences needed
     - **2 points**: Some inferences required
     - **3 points**: High demand for inferences
+
+
+Why:
+
+1. **Number of Steps Required**: This is a strong metric as it objectively quantifies the procedural complexity of a problem. It's advisable to retain it.
+
+2. **Mathematical Concepts Involved**: This metric is essential for understanding the conceptual difficulty of the problems, which is a key aspect of complexity.
+
+3. **Word Problem vs. Direct Question**: This metric differentiates between problems that require additional comprehension skills and those that are more straightforward. It adds value by identifying problems that need contextual interpretation.
+
+4. **Arithmetic Complexity**: Similar to the mathematical concepts involved, this metric focuses more on the computational aspect. It's a valuable metric, especially for assessing the capability of AI in handling various arithmetic complexities.
+
+5. **Problem Context**: While this metric adds depth by considering real-world applicability, it might be more subjective compared to others. However, it is still useful for understanding how context influences problem complexity.
+
+6. **Basic Semantic Complexity**: This is the most subjective metric and includes subcategories like conceptual density, contextual layers, linguistic complexity, and inferential demand. While these aspects add depth to the complexity analysis, they also introduce a higher degree of subjectivity. If any metric were to be considered for removal or simplification, it might be this one, particularly by streamlining or merging its subcategories to reduce subjectivity.
