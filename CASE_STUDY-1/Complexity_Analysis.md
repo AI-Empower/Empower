@@ -1,52 +1,27 @@
-Research question "Does the complexity of math problems affect the accuracy of different AI models?"
+# RQ2 "Does the complexity of math problems affect the accuracy of different AI models?"
 
-Let's start by examining the provided data. Considering the categorical nature of the data (correct/incorrect answers, AI model types) and the complexity scores, a Chi-Square Test seems most appropriate. This test can help us understand if there's a statistically significant association between the complexity of math problems and the accuracy of different AI models.
+We categorized the complexity scores into three categories: Low, Medium, and High using the data from the Complexity Scores
 
-Before conducting the Chi-Square Test, we need to validate its assumptions:
-1. **Expected Frequency**: Each cell in the contingency table should have an expected frequency of 5 or more.
-2. **Independence**: The observations (in this case, the responses of AI models to different math problems) should be independent of each other.
+### Complexity Score Categories
+- Low: Scores <= 10
+- Medium: Scores > 10 and <= 12
+- High: Scores > 12
 
-Let's first check if the expected frequency condition is met. We'll create a contingency table from your data and calculate the expected frequencies.
+### Detailed Assumption Tables: 
+```
+Zero-Shot Accuracy as Correct ( Correct = 1, Incorrect = 0)  0.0  1.0
+Model  Complexity Category                                           
+Bard   High                                                    4    0
+       Medium                                                  5   11
+       Low                                                     0   10
+GPT3.5 High                                                    2    2
+       Medium                                                  2   14
+       Low                                                     1    9
+GPT4   High                                                    0    4
+       Medium                                                  0   16
+       Low                                                     0   10
+```
 
-The contingency table and the corresponding expected frequencies from the Chi-Square Test are as follows:
-
-### Contingency Table
-| Model  | Complexity Score | Incorrect (0) | Correct (1) |
-| ------ | ---------------- | ------------- | ----------- |
-| Bard   | 6                | 0             | 3           |
-| Bard   | 8                | 0             | 1           |
-| Bard   | 10               | 0             | 1           |
-| Bard   | 12               | 4             | 8           |
-| Bard   | 18               | 3             | 0           |
-| GPT3.5 | 6                | 0             | 3           |
-| GPT3.5 | 8                | 0             | 1           |
-| GPT3.5 | 10               | 0             | 1           |
-| GPT3.5 | 12               | 1             | 11          |
-| GPT3.5 | 18               | 2             | 1           |
-| GPT4   | 6                | 0             | 3           |
-| GPT4   | 8                | 0             | 1           |
-| GPT4   | 10               | 0             | 1           |
-| GPT4   | 12               | 0             | 12          |
-| GPT4   | 18               | 0             | 3           |
-
-### Expected Frequencies
-| Model  | Complexity Score | Incorrect (0) | Correct (1) |
-| ------ | ---------------- | ------------- | ----------- |
-| Bard   | 6                | 0.5           | 2.5         |
-| Bard   | 8                | 0.17          | 0.83        |
-| Bard   | 10               | 0.17          | 0.83        |
-| Bard   | 12               | 2.0           | 10.0        |
-| Bard   | 18               | 0.5           | 2.5         |
-| ...    | ...              | ...           | ...         |
-
-The expected frequencies for several cells are below 5, which violates one of the assumptions for the Chi-Square Test. This could impact the validity of the test results. However, given the nature of the data and the research question, we might still proceed with the Chi-Square Test while acknowledging this limitation in our analysis.
-
-Next, I will perform the Chi-Square Test to determine if there is a statistically significant difference in the accuracy of the AI models across different complexity scores. Let's analyze the results.
-
-The results of the Chi-Square Test are as follows:
-
-- **Chi-Square Statistic**: 29.40
-- **p-value**: 0.00922
 
 ### Interpretation:
 - The chi-square statistic measures how much the observed frequencies differ from the expected frequencies. A higher value indicates a greater discrepancy.
