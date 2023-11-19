@@ -7,7 +7,7 @@ We categorized the complexity scores into three categories: Low, Medium, and Hig
 - Medium: Scores > 10 and <= 12
 - High: Scores > 12
 
-### Detailed Assumption Tables: 
+### Data Tables: 
 ```
 Zero-Shot Accuracy as Correct ( Correct = 1, Incorrect = 0)  0.0  1.0
 Model  Complexity Category                                           
