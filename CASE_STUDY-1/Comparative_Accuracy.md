@@ -72,7 +72,8 @@ chi2_filled, p_filled, dof_filled, expected_filled = chi2_contingency(chi_square
 chi_square_data_filled, {'Chi-Square Statistic': chi2_filled, 'p-value': p_filled, 'Degrees of Freedom': dof_filled, 'Expected Frequencies': expected_filled}
 ```
 
-The Chi-Squared test was conducted against a 50% larger sample size to ensure robustness of data. Those results have been provided below in an abbreviated form:
+## The Chi-Squared test was conducted against a 50% larger sample size to ensure robustness of data. 
+*Those results have been provided below in an abbreviated form:*
 
 #### Contingency Table
 ```
