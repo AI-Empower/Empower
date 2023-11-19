@@ -53,9 +53,10 @@ chi2_filled, p_filled, dof_filled, expected_filled = chi2_contingency(chi_square
 # Displaying the adjusted contingency table and the results of the Chi-Square Test
 chi_square_data_filled, {'Chi-Square Statistic': chi2_filled, 'p-value': p_filled, 'Degrees of Freedom': dof_filled, 'Expected Frequencies': expected_filled}
 ```
-# Concerns Remained - A balance between independant researcher capability & robust data must be struck
+# Concerns Remained 
+## A balance between independant researcher capability & robust data must be struck
 So I increased my sample size by 50%
-## The Chi-Squared test was conducted against a 50% larger sample size to ensure robustness of data. 
+## The Chi-Squared test - Take 2 
 *Those results have been provided below in an abbreviated form:*
 
 #### Contingency Table
