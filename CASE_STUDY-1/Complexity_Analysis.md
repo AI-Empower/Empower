@@ -7,7 +7,11 @@ We categorized the complexity scores into three categories: Low, Medium, and Hig
 - Medium: Scores > 10 and <= 12
 - High: Scores > 12
 
-### Data Tables: 
+## Data Tables
+
+###
+
+### Chi Analysis table
 ```
 Zero-Shot Accuracy as Correct ( Correct = 1, Incorrect = 0)  0.0  1.0
 Model  Complexity Category                                           
@@ -26,19 +30,20 @@ GPT4   High                                                    0    4
 
 The cross-tabulation and percentage breakdown of accuracy across different models and complexity categories are as follows:
 
+
 ### Cross-Tabulation Counts:
-- **Bard Model**:
-  - Low Complexity: 4 correct, 0 incorrect.
-  - Medium Complexity: 6 correct, 0 incorrect.
-  - High Complexity: 11 correct, 9 incorrect.
-- **GPT3.5 Model**:
-  - Low Complexity: 4 correct, 0 incorrect.
-  - Medium Complexity: 5 correct, 1 incorrect.
-  - High Complexity: 16 correct, 4 incorrect.
-- **GPT4 Model**:
-  - Low Complexity: 4 correct, 0 incorrect.
-  - Medium Complexity: 6 correct, 0 incorrect.
-  - High Complexity: 20 correct, 0 incorrect.
+
+| Model          | Complexity      | Correct   | Incorrect  |
+| -------------- | --------------- | --------- | ---------- |
+| Bard Model     | Low Complexity  | 4         | 0          |
+|                | Medium Complexity | 6         | 0          |
+|                | High Complexity | 11        | 9          |
+| GPT3.5 Model   | Low Complexity  | 4         | 0          |
+|                | Medium Complexity | 5         | 1          |
+|                | High Complexity | 16        | 4          |
+| GPT4 Model     | Low Complexity  | 4         | 0          |
+|                | Medium Complexity | 6         | 0          |
+|                | High Complexity | 20        | 0          |
 
 #### Percentage Breakdown:
 - **Bard Model**:
