@@ -1,6 +1,5 @@
-# Quantitative Metrics for Evaluating Language Aspects
-
-Open source education on ways to convert qualitative aspects of language into quantitative metrics to measure prompt engineering success. 
+# Prompt Architecture Success Measures
+Quantitative Metrics for Evaluating Language Aspects. Open source education on ways to convert qualitative aspects of language into quantitative metrics to measure prompt engineering success. 
 
 Here's a list of techniques I've found so far:
 
