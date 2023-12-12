@@ -22,9 +22,7 @@ Here's a list of techniques I've found so far:
 15. **Error Typology and Frequency Analysis**: Categorizes errors, identifying improvement areas.
 16. **User Engagement and Retention Metrics**: Measures user interaction, gauging interest maintenance.
 17. **Impact of Response Time**: Analyzes response time effects on user satisfaction.
-18. 
-19. 
-20. 
+
 
 **Other Methods (Qual, Semi-Quant and more):**
 
