@@ -2,6 +2,7 @@
 Quantitative Metrics for Evaluating Language Aspects. Open source education on ways to convert qualitative aspects of language into quantitative metrics to measure prompt engineering success. 
 
 Here's a list of techniques I've found so far:
+
 **Quantitative Methods:**
 
 1. **Lexical Diversity (TTR, MTLD)**: Measures the range of vocabulary, reflecting the richness of language elicited by the prompt.
